@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>VREMENSKA PROGNOZA</title>
+</head>
+
+<body>
+    <script src="main.js"></script>
+
+    <h1>Turistička agencija "Planinar"</h1>
+
+    <!--Kreiranje dela za navigaciju-->
+    <div id="navigacija">
+        <button id="pocetna"><a href="index.html"><h2>Početna</h2></a></button>
+        <button><a href="Oautoru.html"><h3>O autoru</h3></a></button>
+        <button><a href="UPUTSTVO.html"><h3>Uputstvo</h3></a></button>
+    </div>
+
+    <!--Pravljenje drop down lsite za odabor gradova-->
+    <div id="prognoza">
+        <div id="slc">
+            <form action="POST" name="prognoza">
+                <label for="grad">IZABERITE GRAD </label>
+                 <!--Drop down lista za selekciju gradova-->
+                <select name="grad" id="selektor" onchange="provera();">
+                    <option value="beograd">Beograd</option>
+                    <option value="novi-sad">Novi Sad</option>
+                    <option value="kikinda">Kikinda</option>
+                    <option value="vrbas">Vrbas</option>
+                    <option value="loznica">Loznica</option>
+                    <option value="smederevo">Smederevo</option>
+                    <option value="sombor">Sombor</option>
+                    <option value="subotica">Subotica</option>
+                    <option value="pancevo">Pančevo</option>
+                    <option value="negotin">Negotin</option>
+                </select>
+            </form>
+        </div>
+
+        <iframe src="https://naslovi.net/vremenska-prognoza/beograd" frameborder="0" id = "vebsajt"></iframe>
+
+    </div>
+</body>
+
+<footer>
+    © Turistička agencija "Planinar"
+</footer>
+
+</html>
